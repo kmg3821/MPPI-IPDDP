@@ -1,0 +1,53 @@
+# CompilerName=mingw64
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/win64
+matlabdir = C:/Program Files/MATLAB/R2021b
+startdir = D:/OneDrive/석사논문/자료/mppi/코드/mppi-ddp/solver/forces
+
+# Toolchain information
+cc = C:\ProgramData\MATLAB\SupportPackages\R2021b\3P.instrset\mingw_w64.instrset\bin\gcc
+cxx = C:\ProgramData\MATLAB\SupportPackages\R2021b\3P.instrset\mingw_w64.instrset\bin\g++
+linker = C:\ProgramData\MATLAB\SupportPackages\R2021b\3P.instrset\mingw_w64.instrset\bin\gcc
+linkerxx = C:\ProgramData\MATLAB\SupportPackages\R2021b\3P.instrset\mingw_w64.instrset\bin\g++
+
+cflags =  -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces\codegen\mex\nlmpcmoveForcesMultistage" -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces" -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces\myForcesNLPSolver\include" -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces\codegen\mex\nlmpcmoveForcesMultistage\interface" -I "C:\Program Files\MATLAB\R2021b\extern\include" -I "." -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1  
+
+cxxflags =  -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces\codegen\mex\nlmpcmoveForcesMultistage" -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces" -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces\myForcesNLPSolver\include" -I "D:\OneDrive\석사논문\자료\mppi\코드\mppi-ddp\solver\forces\codegen\mex\nlmpcmoveForcesMultistage\interface" -I "C:\Program Files\MATLAB\R2021b\extern\include" -I "." -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1  
+
+ldflags =  -m64 -Wl,--no-undefined -shared -static -L"C:\Program Files\MATLAB\R2021b\extern\lib\win64\mingw64" -llibmx -llibmex -llibmat -lm -llibmwlapack -llibmwblas -o "nlmpcmove_myForcesNLPSolver.mexw64" -llibemlrt -llibcovrt -llibut -llibmwmathutil  "$startdir\myForcesNLPSolver\lib\libmyForcesNLPSolver.a" "$matlabdir\sys\lcc64\lcc64\lib64\iphlpapi.lib" -Wl,--version-script,nlmpcmove_myForcesNLPSolver.map
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker @$out.rsp $ldflags
+    rspfile = $out.rsp
+    rspfile_content = $in
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/myForcesNLPSolver_casadi2forces.o : cc $startdir/myForcesNLPSolver_casadi2forces.c
+build $builddir/myForcesNLPSolver_casadi.o : cc $startdir/myForcesNLPSolver_casadi.c
+build $builddir/nlmpcmoveForcesMultistage_data.o : cc $root/nlmpcmoveForcesMultistage_data.c
+build $builddir/rt_nonfinite.o : cc $root/rt_nonfinite.c
+build $builddir/nlmpcmoveForcesMultistage_initialize.o : cc $root/nlmpcmoveForcesMultistage_initialize.c
+build $builddir/nlmpcmoveForcesMultistage_terminate.o : cc $root/nlmpcmoveForcesMultistage_terminate.c
+build $builddir/forcesnlmpcMultistageGetParamValues.o : cc $root/forcesnlmpcMultistageGetParamValues.c
+build $builddir/_coder_nlmpcmoveForcesMultistage_api.o : cc $root/interface/_coder_nlmpcmoveForcesMultistage_api.c
+build $builddir/_coder_nlmpcmoveForcesMultistage_mex.o : cc $root/interface/_coder_nlmpcmoveForcesMultistage_mex.c
+build $builddir/nlmpcmoveForcesMultistage.o : cc $root/nlmpcmoveForcesMultistage.c
+build $builddir/_coder_nlmpcmoveForcesMultistage_info.o : cc $root/interface/_coder_nlmpcmoveForcesMultistage_info.c
+build $builddir/c_mexapi_version.o : cc $matlabdir/extern/version/c_mexapi_version.c
+
+# Link
+build $root\nlmpcmove_myForcesNLPSolver.mexw64 : link $builddir/myForcesNLPSolver_casadi2forces.o $builddir/myForcesNLPSolver_casadi.o $builddir/nlmpcmoveForcesMultistage_data.o $builddir/rt_nonfinite.o $builddir/nlmpcmoveForcesMultistage_initialize.o $builddir/nlmpcmoveForcesMultistage_terminate.o $builddir/forcesnlmpcMultistageGetParamValues.o $builddir/_coder_nlmpcmoveForcesMultistage_api.o $builddir/_coder_nlmpcmoveForcesMultistage_mex.o $builddir/nlmpcmoveForcesMultistage.o $builddir/_coder_nlmpcmoveForcesMultistage_info.o $builddir/c_mexapi_version.o 

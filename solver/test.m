@@ -1,0 +1,103 @@
+%%
+clear; close all; clc;
+load("c_tmp.mat");
+load("r_tmp.mat");
+load("xref_tmp.mat");
+load("uref_tmp.mat");
+global xref; xref = x;
+global uref; uref = u;
+global cref; cref = c;
+global rref; rref = r;
+
+
+%% fmincon
+options = optimoptions('fmincon','Algorithm','sqp');
+% options = optimoptions('lsqnonlin','Algorithm','trust-region-reflective');
+x0 = [reshape(xref(:,2:end),[],1); reshape(uref,[],1)];
+% x0 = zeros(250,1);
+xu = fmincon(@f,x0,[],[],[],[],[],[],@mycon,options);
+% xu = lsqnonlin(@fsq,x0,[],[],options);
+x = reshape(xu(1:150),3,[]);
+u = reshape(xu(151:250),2,[]);
+
+
+figure; axis equal; xlim([-4,4]); ylim([-1,7]); hold on;
+plot(x(1,:),x(2,:));
+
+tmp = viscircles([0 0], 0);
+tmp = viscircles(cref',rref','LineWidth',0.3);
+
+%% nonsq
+
+
+%% functions
+
+function y = fsq(xu)
+
+    y = [f(xu); 1e3*max(cineq(xu),0); 1e4*ceq(xu)];
+end
+
+function y = f(xu)
+
+    global xref;
+    x0 = [0;0;pi/2];
+    x = reshape(xu(1:150),3,[]);
+    u = reshape(xu(151:250),2,[]);
+
+    l = 1e-2*sum(u(1,:).^2,'all') + 1e-2*sum(u(2,:).^2,'all') + ...
+        sum((x(1:2,:) - xref(1:2,2:end)).^2,'all')*1e-3;
+    lf = sum((x(:,end) - [0;6;pi/2]).^2,'all')*300;
+    y = l + lf;
+end
+
+function [c,cq] = mycon(xu)
+    c = cineq(xu);
+    cq = ceq(xu);
+end
+
+function y = cineq(xu)
+
+    global cref;
+    global rref;
+
+    x0 = [0;0;pi/2];
+    x = reshape(xu(1:150),3,[]);
+    u = reshape(xu(151:250),2,[]);
+
+    y = reshape(constr([x0,x(:,1:end-1)],u),[],1);
+    
+    function y = constr(x,u)
+        vmax = 1.5;
+        wmax = 1.5;
+
+        y = [u(1,:) - vmax; 
+             -u(1,:) - vmax;
+             u(2,:) - wmax; 
+             -u(2,:) - wmax;
+             sum((x(1:2,:) - cref).^2,1) - rref.^2];
+    end
+end
+
+function y = ceq(xu)
+
+    x0 = [0;0;pi/2];
+    x = reshape(xu(1:150),3,[]);
+    u = reshape(xu(151:250),2,[]);
+    
+    y = x - dyna([x0,x(:,1:end-1)],u);
+    y = reshape(y,[],1);
+    
+    function y = dyna(x,u)
+        y = [x(1,:) + 0.1*u(1,:).*cos(x(3,:)); 
+             x(2,:) + 0.1*u(1,:).*sin(x(3,:));
+             x(3,:) + 0.1*u(2,:)];
+    end
+end
+
+
+
+
+
+
+
+

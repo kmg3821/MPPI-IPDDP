@@ -1,0 +1,74 @@
+[
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   D:/OneDrive/석사논문/자료/mppi/코드/mppi-ddp/solver/forces/myForcesNLPSolver_casadi2forces.c -o build/win64/myForcesNLPSolver_casadi2forces.o",
+    "file": "D:/OneDrive/석사논문/자료/mppi/코드/mppi-ddp/solver/forces/myForcesNLPSolver_casadi2forces.c",
+    "output": "build/win64/myForcesNLPSolver_casadi2forces.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   D:/OneDrive/석사논문/자료/mppi/코드/mppi-ddp/solver/forces/myForcesNLPSolver_casadi.c -o build/win64/myForcesNLPSolver_casadi.o",
+    "file": "D:/OneDrive/석사논문/자료/mppi/코드/mppi-ddp/solver/forces/myForcesNLPSolver_casadi.c",
+    "output": "build/win64/myForcesNLPSolver_casadi.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   nlmpcmoveForcesMultistage_data.c -o build/win64/nlmpcmoveForcesMultistage_data.o",
+    "file": "nlmpcmoveForcesMultistage_data.c",
+    "output": "build/win64/nlmpcmoveForcesMultistage_data.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   rt_nonfinite.c -o build/win64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/win64/rt_nonfinite.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   nlmpcmoveForcesMultistage_initialize.c -o build/win64/nlmpcmoveForcesMultistage_initialize.o",
+    "file": "nlmpcmoveForcesMultistage_initialize.c",
+    "output": "build/win64/nlmpcmoveForcesMultistage_initialize.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   nlmpcmoveForcesMultistage_terminate.c -o build/win64/nlmpcmoveForcesMultistage_terminate.o",
+    "file": "nlmpcmoveForcesMultistage_terminate.c",
+    "output": "build/win64/nlmpcmoveForcesMultistage_terminate.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   forcesnlmpcMultistageGetParamValues.c -o build/win64/forcesnlmpcMultistageGetParamValues.o",
+    "file": "forcesnlmpcMultistageGetParamValues.c",
+    "output": "build/win64/forcesnlmpcMultistageGetParamValues.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   interface/_coder_nlmpcmoveForcesMultistage_api.c -o build/win64/_coder_nlmpcmoveForcesMultistage_api.o",
+    "file": "interface/_coder_nlmpcmoveForcesMultistage_api.c",
+    "output": "build/win64/_coder_nlmpcmoveForcesMultistage_api.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   interface/_coder_nlmpcmoveForcesMultistage_mex.c -o build/win64/_coder_nlmpcmoveForcesMultistage_mex.o",
+    "file": "interface/_coder_nlmpcmoveForcesMultistage_mex.c",
+    "output": "build/win64/_coder_nlmpcmoveForcesMultistage_mex.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   nlmpcmoveForcesMultistage.c -o build/win64/nlmpcmoveForcesMultistage.o",
+    "file": "nlmpcmoveForcesMultistage.c",
+    "output": "build/win64/nlmpcmoveForcesMultistage.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   interface/_coder_nlmpcmoveForcesMultistage_info.c -o build/win64/_coder_nlmpcmoveForcesMultistage_info.o",
+    "file": "interface/_coder_nlmpcmoveForcesMultistage_info.c",
+    "output": "build/win64/_coder_nlmpcmoveForcesMultistage_info.o"
+  },
+  {
+    "directory": "D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\myForcesNLPSolver\\include\" -I \"D:\\OneDrive\\석사논문\\자료\\mppi\\코드\\mppi-ddp\\solver\\forces\\codegen\\mex\\nlmpcmoveForcesMultistage\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=nlmpcmove_myForcesNLPSolver -D__USE_MINGW_ANSI_STDIO=1   \"C:/Program Files/MATLAB/R2021b/extern/version/c_mexapi_version.c\" -o build/win64/c_mexapi_version.o",
+    "file": "C:/Program Files/MATLAB/R2021b/extern/version/c_mexapi_version.c",
+    "output": "build/win64/c_mexapi_version.o"
+  }
+]
